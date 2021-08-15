@@ -5,6 +5,7 @@ const Body = Matter.Body;
 
 var ball;
 var groundObj,leftSide,rightSide;
+var ground;
 var world;
 var radius = 40;
 
