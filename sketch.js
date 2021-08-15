@@ -3,9 +3,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-var ball;
-var groundObj,leftSide,rightSide;
-var ground;
+var ball,groundObj,leftSide,rightSide;
 var world;
 var radius = 40;
 
@@ -23,9 +21,6 @@ function setup() {
 		density:1.2
 	}
 
-	//Create the Bodies Here.
-
-
 	ball = Bodies.circle(260,100,radius/2,ball_options);
 	World.add(world,ball);
 
@@ -35,12 +30,11 @@ function setup() {
 
 	Engine.run(engine);
   
-  
 }
 
 
 function draw() {
-   rectMode(CENTER);
+  rectMode(CENTER);
   background(0);
 
 
@@ -59,6 +53,3 @@ function keyPressed() {
     
   	}
 }
-
-
-
